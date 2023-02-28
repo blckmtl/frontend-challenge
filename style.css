@@ -1,0 +1,101 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Hanken Grotesk;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@font-face {
+  font-family: Hanken Grotesk;
+  src: https://fonts.google.com/specimen/Hanken+Grotesk;
+}
+
+h2 {
+  font-weight: 800;
+  color: white;
+}
+
+h3 {
+  font-weight: 700;
+  color: hsl(224, 30%, 27%) ;
+}
+
+.wholebox {
+  width: 1440px;
+  
+}
+
+.leftbox {
+  background-color: hsl(252, 100%, 67%);
+  
+}
+
+.dot {
+  height: 125px;
+  width: 125px;
+  background-color: Light royal blue (background): hsl(241, 81%, 54%);
+  border-radius: 100%;
+  display: inline-block;
+}
+.score {
+  color: white;
+}
+.reaction {
+  color: hsl(0, 100%, 67%);
+  border-radius: 5px;
+  background: hsl(354, 100%, 97%);
+  padding: 20px; 
+  width: 300px;
+  height: 50px;
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  border-radius: 5px;
+  background: hsl(39, 100%, 97%);
+  padding: 20px; 
+  width: 300px;
+  height: 50px;
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%); 
+  border-radius: 5px;
+  background: hsl(166, 100%, 97%);
+  padding: 20px; 
+  width: 300px;
+  height: 50px;
+}
+
+.visual{
+  color: hsl(234, 85%, 45%);
+  border-radius: 5px;
+  background: hsl(234, 85%, 97%);
+  padding: 20px; 
+  width: 300px;
+  height: 50px;
+}
+
+button {
+  background-color:hsl(224, 30%, 27%) ;
+  border-radius: 25px;
+  color: white;
+  width: 300px;
+  height: 50px;
+  border: 0;
+  font: Hanken Grotesk;
+  font-size: 18px;
+  padding: 1em;
+}
+
+@media (max-width: 1440px) {
+  flex-direction: columns;
+  gap: 0;
+}
