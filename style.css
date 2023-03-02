@@ -7,9 +7,11 @@ html {
 }
 
 body {
+  align-items: center;
   font-family: Hanken Grotesk;
   font-size: 18px;
   line-height: 1.5;
+  color:hsl(224, 30%, 27%)  ;
 }
 
 @font-face {
@@ -20,70 +22,160 @@ body {
 h2 {
   font-weight: 800;
   color: white;
+  text-align: center;
+  
 }
 
 h3 {
   font-weight: 700;
   color: hsl(224, 30%, 27%) ;
+  align-items: center; 
+  padding: 2em;
+  text-align: center;
 }
 
-.wholebox {
-  width: 1440px;
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+#wholeBox {
+  
+  
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  float: center;
+  
+  height: 475px;
+  border-radius: 25px;
   
 }
 
-.leftbox {
+#leftBox {
+  float: left;
   background-color: hsl(252, 100%, 67%);
+  border-radius: 25px;
+  left: 0;
+  margin: 0px 0px 50px 0px;
+  width: 600px;
+  height: 475px;
   
 }
 
-.dot {
+.rightBox {
+  float: inherit;
+  background-color: white;
+  border-radius: 25px;
+  right: 0;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+  
+}
+
+
+
+.circle {
   height: 125px;
   width: 125px;
-  background-color: Light royal blue (background): hsl(241, 81%, 54%);
+  background-color: Light royal #000075 (background): hsl(241, 81%, 65%);
   border-radius: 100%;
   display: inline-block;
 }
+
+
+
+.p {
+  font-size: 18px;
+  position: absolute;
+  padding: 2em;
+  float: center;
+}
 .score {
   color: white;
+  float: center;
+  text-align: center;
 }
+row {
+        border-collapse: separate;
+        border-spacing: 0 20px;
+      }
+
+.col1 {
+  text-align: right;
+  color: hsl(224, 30%, 27%);
+}
+.col2 {
+  text-align: right;
+  color: hsl(241, 100%, 89%);
+}
+
 .reaction {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  float: right;
+  display: flex;
+  align-items: center;
   color: hsl(0, 100%, 67%);
-  border-radius: 5px;
+  border-radius: 10px;
   background: hsl(354, 100%, 97%);
   padding: 20px; 
   width: 300px;
   height: 50px;
+  text-align: justify;
+  
 }
 
 .memory {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  float: right;
+  display: flex;
+  align-items: center;
   color: hsl(39, 100%, 56%);
-  border-radius: 5px;
+  border-radius: 10px;
   background: hsl(39, 100%, 97%);
   padding: 20px; 
   width: 300px;
   height: 50px;
+  text-align: justify;
 }
 
 .verbal {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  float: right;
+  display: flex;
+  align-items: center;
   color: hsl(166, 100%, 37%); 
-  border-radius: 5px;
+  border-radius: 10px;
   background: hsl(166, 100%, 97%);
   padding: 20px; 
   width: 300px;
   height: 50px;
+  text-align: justify;
 }
 
-.visual{
+.visual {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  float: right;
+  display: flex;
+  align-items: center;
   color: hsl(234, 85%, 45%);
-  border-radius: 5px;
+  border-radius: 10px;
   background: hsl(234, 85%, 97%);
   padding: 20px; 
   width: 300px;
   height: 50px;
+  text-align: justify;
 }
 
 button {
+  float: right;
   background-color:hsl(224, 30%, 27%) ;
   border-radius: 25px;
   color: white;
@@ -91,11 +183,15 @@ button {
   height: 50px;
   border: 0;
   font: Hanken Grotesk;
-  font-size: 18px;
+  font-size: 16px;
   padding: 1em;
 }
 
+#attribution {
+  
+}
 @media (max-width: 1440px) {
   flex-direction: columns;
   gap: 0;
 }
+

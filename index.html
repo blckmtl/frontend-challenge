@@ -14,40 +14,76 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<div class="wholebox">
+
+<div>  
+<div id="wholeBox">
 <body>
   
-  <div class="leftbox">
+  <div id="leftBox">
+    <div class="centered">
   <h3>Your Result</h3>
     
   
 
     
   <div class="score">
-    <span class="dot"></span>76<br>
+      <div><span class="circle"></span>
+    <div class="grade"></div>76<br>
   
-  of 100</div>
-
+      of 100</div>
+  </div>
+  
   
     <h2>Great</h2>
-  <p>You scored higher than 65% of the people who have taken these tests.</p>
+  <p>You scored higher than 65% of<br> the people who have taken<br> these tests.</p>
   </div>
-
-  <div class="rightbox">
+  </div>
+  
+  <div id="rightBox">
   <h3>Summary</h3>
 
-  <div class="reaction">Reaction 80 / 100</div>
+<div class="row">
+    <div class ="col">
+        <div class="box">
+          <div class="reaction">Reaction<div class="col1"> 80 </div> <div class="col2">/ 100</div>
+  </div>
+        </div>
+    </div>
+    <div class ="col">
+        <div class="box">
+          <div class="memory">Memory<div class="col1"> 92 </div> <div class="col2"> / 100</div>
+  </div>
+        </div>
+    </div>
+    <div class ="col">
+        <div class="box">
+          <div class="verbal">Verbal<div class="col1"> 61 </div><div class="col2"> / 100</div>
+  </div></div>
+    </div>
+    <div class ="col">
+        <div class="box">
+          <div class="visual">Visual<div class="col1">72</div><div class="col2"> / 100</div>
+  </div>
+        </div>
+    </div>
+</div>
+  <div> 
+   <button>Continue</button>
+</div>
+  
+  </div>
+</div>
+</div>   
 
-  <div class="memory">Memory
-  92 / 100</div>
-
-  <div class="verbal">Verbal 61 / 100</div>
   
 
-  <div class="visual">Visual
-  72 / 100</div>
+  
+  
 
-  <button>Continue</button>
+  
+ 
+
+  
   
   <script src="script.js"></script>
 
@@ -59,9 +95,10 @@
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
   </div>
 </div>
+  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">blckmtl</a>.
   </div>
 </body>
 </html>
