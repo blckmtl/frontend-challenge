@@ -44,12 +44,7 @@ h3 {
   padding-top: 20px;
 }
 
-.table {
-  border-collapse: separate;
-  border-spacing: 0 20px;
-}
-
-.wholeBox {
+#wholeBox {
   
   
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -60,7 +55,7 @@ h3 {
   
 }
 
-.leftBox {
+#leftBox {
   float: left;
   background-color: hsl(252, 100%, 67%);
   border-radius: 25px;
